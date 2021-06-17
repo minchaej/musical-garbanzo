@@ -1,5 +1,7 @@
 package problems
 
+import java.lang.IllegalArgumentException
+
 object TwoSum {
 
     //two pointer method
