@@ -18,7 +18,6 @@ object TwoSum {
                 }
             }
         }
-
     }
 
     //Brute method
