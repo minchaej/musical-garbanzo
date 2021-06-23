@@ -62,4 +62,18 @@ class ClimbingStairs {
         return lhs + rhs
     }
 
+    fun fibonacciIterative(n: Int): Int {
+        if (n <= 1) {
+            return n
+        }
+        var fib = 1
+        var prevFib = 1
+        for (i in 2 until n) {
+            val temp = fib
+            fib += prevFib
+            prevFib = temp
+        }
+        return fib
+    }
+
 }

@@ -3,7 +3,7 @@ package problems
 class MergeSortedArray {
 
     //time O(n/2) with space O(1)
-    fun mergeFromSolution(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
+    fun mergeFromSolution(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
         var end = m + n - 1
         var i = m - 1
         var j = n - 1
