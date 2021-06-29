@@ -14,7 +14,7 @@ class BinaryTreeInorderTraversal {
         var right: TreeNode? = null
     }
 
-        fun tester() {
+    fun tester() {
         //[1,99,2,3]
         val root = TreeNode(1)
         root.left = TreeNode(99)
