@@ -11,6 +11,12 @@ import java.util.*
     (c) Postorder (Left, Right, Root) : 4 5 2 3 1
     Breadth First or Level Order Traversal : 1 2 3 4 5
     Please see this post for Breadth First Traversal.
+
+    Lets review properties of a BST:
+
+    Left subtree of a node N contains nodes whose values are lesser than or equal to node N's value.
+    Right subtree of a node N contains nodes whose values are greater than node N's value.
+    Both left and right subtrees are also BSTs.
  */
 class LowestCommonAncestorOfBinarySearchTree {
 
