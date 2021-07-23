@@ -6,3 +6,10 @@ fun IntArray.print() {
     }
     println()
 }
+
+fun CharArray.print() {
+    this.forEach {
+        print("${it} ")
+    }
+    println()
+}
