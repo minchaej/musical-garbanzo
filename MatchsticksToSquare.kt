@@ -8,7 +8,7 @@ import java.util.*
  * To get all possible subsequence of an array, each element had two choices (1) to include (2) to exclude.
  * Since it had two choices, time complexity is 2^n.
  * This problem is similar in a way, but each element has four choices. (1) to be used for a side, and square has four sides
- * So basic solution has 4^n.
+ * So basic solution has 4^n; this is called "BackTracking"
  *
  * todo: Solve this with Dynamic Programming; reduces time to 2^n; NP-hard problem
  *
