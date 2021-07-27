@@ -1,11 +1,8 @@
 package problems
 
-class ConvertSortedArrayToBinarySearchTree {
+import problems.datastructure.TreeNode
 
-    class TreeNode(var `val`: Int) {
-        var left: TreeNode? = null
-        var right: TreeNode? = null
-    }
+class ConvertSortedArrayToBinarySearchTree {
 
     fun sortedArrayToBST(nums: IntArray): TreeNode? {
         if (nums.size == 1) {
