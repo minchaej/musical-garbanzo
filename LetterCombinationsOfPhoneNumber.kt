@@ -2,11 +2,6 @@ package problems
 
 class LetterCombinationsOfPhoneNumber {
 
-    fun appo(digits: String): List<String> {
-        val sb = StringBuilder()
-        return emptyList()
-    }
-
     fun letterCombinations(digits: String): List<String> {
         if (digits.isEmpty()) {
             return emptyList()
@@ -47,22 +42,10 @@ class LetterCombinationsOfPhoneNumber {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
     fun letterCombinationsWrong(digits: String): List<String> {
         if (digits.isEmpty()) {
             return emptyList()
         }
-
-
 
         val list = ArrayList<String>()
         val default = StringBuilder()
@@ -104,7 +87,6 @@ class LetterCombinationsOfPhoneNumber {
 
 
         }
-
 
 
         return emptyList()
