@@ -1,5 +1,7 @@
 package problems
 
+import problems.datastructure.print
+
 class SpiralMatrix {
     fun spiralOrder(matrix: Array<IntArray>): List<Int> {
         val res = ArrayList<Int>()
@@ -69,4 +71,57 @@ class SpiralMatrix {
 
         return res
     }
+
+    fun generateMatrix(n: Int): Array<IntArray> {
+        val res = Array<IntArray>(n){ IntArray(n) }
+
+        var deduct = true
+        var counter = 1
+        var rep = n
+        var x = 0
+        var y = 0
+
+        var isRow = true
+        var isPos = true
+
+        while (rep != 0) {
+            for (i in 0 until rep) {
+                res[y][x] = counter
+                counter++
+                if (i != rep - 1) {
+                    when {
+                        isRow && isPos -> x++
+                        isRow && !isPos -> x--
+                        !isRow && isPos -> y++
+                        !isRow && !isPos -> y--
+                    }
+                }
+            }
+
+//            for (i in 0 until res.size) {
+//                res[i].print()
+//            }
+//            println()
+
+            when {
+                isRow && isPos -> y++
+                isRow && !isPos -> y--
+                !isRow && isPos -> x--
+                !isRow && !isPos -> x++
+            }
+
+            isRow = !isRow
+            if (isRow) {
+                isPos = !isPos
+            }
+
+            if (deduct) {
+                rep--
+            }
+            deduct = !deduct
+        }
+
+        return res
+    }
+
 }
